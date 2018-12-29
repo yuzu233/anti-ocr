@@ -25,7 +25,7 @@
         context.fillStyle = $("fontcolor").innerHTML;
         context.strokeStyle = $("fontcolor").innerHTML;
         
-	n = txt.length/10;
+	n = txt.length/5;
         n2 = txt.length * 10;
         for (var i = 0; i < n2; i++) {
             x = random(0,canvas.width);
@@ -57,7 +57,7 @@
             while (text.length > len) {
                 var txtLine = text.substring(0, len);
                 text = text.substring(len);
-                var r = random(-1,1)/random(60,100);
+                var r = random(-1,1)/random(50,100);
                 context.rotate(r);//隨機旋轉每一行文字
                 context.fillText(txtLine, 10, 5 + fontSize * (3 / 2) * i++,
                         canvas.width);
