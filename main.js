@@ -26,7 +26,7 @@
         context.strokeStyle = $("fontcolor").innerHTML;
         
 	n = txt.length/5;
-        n2 = txt.length * 10;
+        n2 = txt.length * fontSize;
         for (var i = 0; i < n2; i++) {
             x = random(0,canvas.width);
             y = random(0,canvas.height);
@@ -44,7 +44,7 @@
             context.lineWidth = 1;
             context.beginPath();
             context.moveTo(x, y);
-            context.lineTo(x+random(-random(0,canvas.width/3),random(0,canvas.width/3)), y+random(-random(0,canvas.width/3),random(0,canvas.width/3)));//隨機畫線
+            context.lineTo(x+random(-random(0,canvas.width/2),random(0,canvas.width/2)), y+random(-random(0,canvas.width/2),random(0,canvas.width/2)));//隨機畫線
             context.closePath();
             context.stroke();
         }
