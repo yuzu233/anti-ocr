@@ -30,7 +30,7 @@
         for (var i = 0; i < n2; i++) {
             x = random(0,canvas.width);
             y = random(0,canvas.height);
-            context.lineWidth = 1;
+            context.lineWidth = random(1,2);
             context.beginPath();
             context.moveTo(x, y);
             context.lineTo(x+1, y+1);//隨機畫點
