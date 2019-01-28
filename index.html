@@ -6,7 +6,7 @@
 </head>
 <body>
 <div style="float: left"><textarea id="txt"
-    style="width: 300px; height: 400px;">這是一段測試文本～
+    style="width: 400px; height: 500px;">這是一段測試文本～
 哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈
 喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵喵</textarea></div>
 <div>
@@ -42,6 +42,16 @@
         <p>Blue： <input type="range" id="backcolor_blue" min="0" max="255" value="255"
             onchange="changeColor('backcolor');" /></p></td>
     </tr>
+    <tr>
+        <td><label>線條粗細:</label><input size="4" id='lineSize' value='1' /></td>
+    </tr>
+    <tr>
+        <td><label>畫點大小:</label><input size="4" id='pointSize' value='1' /></td>
+    </tr>
+    <tr>
+        <td><label>畫點密度:</label><input type="range" id="points" min="0" max="20" value="1" /></td>
+    </tr>
+    <tr>
     <tr>
         <td>
         <button onclick=
